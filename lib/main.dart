@@ -1,5 +1,7 @@
+import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flip_ui/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(4, 122, 213, 1)),
         useMaterial3: true,
       ),
-      home: HomeView(),
+      home: CategoryView(),
     );
   }
 }

@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -11,6 +12,13 @@ class BnavbarView extends GetView {
   Widget build(BuildContext context) {
     int selectedIndex=index;
     return BottomNavigationBar(
+      onTap: (value) {
+        print(value);
+        if (value==1){
+          Get.to(CategoryView());
+
+        }
+      },
       currentIndex: selectedIndex,
       selectedItemColor: Theme.of(context).primaryColor,
       unselectedItemColor: Colors.grey,
