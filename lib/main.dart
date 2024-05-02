@@ -1,5 +1,6 @@
 import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flip_ui/app/modules/home/views/home_view.dart';
+import 'package:flip_ui/app/modules/notifications/views/notifications_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(4, 122, 213, 1)),
         useMaterial3: true,
       ),
-      home: CategoryView(),
+      home: NotificationsView(),
     );
   }
 }
