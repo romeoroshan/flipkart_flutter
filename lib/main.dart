@@ -1,3 +1,4 @@
+import 'package:flip_ui/app/modules/account/views/account_view.dart';
 import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flip_ui/app/modules/home/views/home_view.dart';
 import 'package:flip_ui/app/modules/notifications/views/notifications_view.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(4, 122, 213, 1)),
         useMaterial3: true,
       ),
-      home: NotificationsView(),
+      home: AccountView(),
     );
   }
 }

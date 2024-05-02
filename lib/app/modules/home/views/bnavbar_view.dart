@@ -20,6 +20,9 @@ class BnavbarView extends GetView {
         }
       },
       currentIndex: selectedIndex,
+      iconSize: 18,
+      selectedLabelStyle: TextStyle(fontSize: 10),
+      unselectedFontSize: 10,
       selectedItemColor: Theme.of(context).primaryColor,
       unselectedItemColor: Colors.grey,
       showUnselectedLabels: true,
