@@ -1,4 +1,5 @@
 import 'package:flip_ui/app/modules/account/views/account_view.dart';
+import 'package:flip_ui/app/modules/cart/views/cart_view.dart';
 import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flip_ui/app/modules/home/views/home_view.dart';
 import 'package:flip_ui/app/modules/notifications/views/notifications_view.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(4, 122, 213, 1)),
         useMaterial3: true,
       ),
-      home: AccountView(),
+      home: CartView(),
     );
   }
 }
