@@ -1,8 +1,5 @@
-import 'package:flip_ui/app/modules/account/views/account_view.dart';
-import 'package:flip_ui/app/modules/cart/views/cart_view.dart';
-import 'package:flip_ui/app/modules/category/views/category_view.dart';
 import 'package:flip_ui/app/modules/home/views/home_view.dart';
-import 'package:flip_ui/app/modules/notifications/views/notifications_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,7 +17,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -36,12 +32,12 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        primaryColor: Color.fromRGBO(4, 122, 213, 1),
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(4, 122, 213, 1)),
+        primaryColor: const Color.fromRGBO(4, 122, 213, 1),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromRGBO(4, 122, 213, 1)),
         useMaterial3: true,
       ),
-      home: CartView(),
+      home: const HomeView(),
     );
   }
 }
-

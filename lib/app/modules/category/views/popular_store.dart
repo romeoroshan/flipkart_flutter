@@ -10,7 +10,7 @@ class PopularStore extends GetView {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width * .25,
       child: Column(
         children: [

@@ -1,6 +1,10 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:flip_ui/app/modules/account/views/account_view.dart';
+import 'package:flip_ui/app/modules/cart/views/cart_view.dart';
 import 'package:flip_ui/app/modules/category/views/category_view.dart';
+import 'package:flip_ui/app/modules/home/views/home_view.dart';
+import 'package:flip_ui/app/modules/notifications/views/notifications_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -13,15 +17,26 @@ class BnavbarView extends GetView {
     int selectedIndex=index;
     return BottomNavigationBar(
       onTap: (value) {
-        print(value);
         if (value==1){
-          Get.to(CategoryView());
-
+          Get.to(const CategoryView());
         }
+        else if(value==2){
+          Get.to(const NotificationsView());
+        }
+        else if(value==0){
+          Get.to(const HomeView());
+        }
+        else if(value==3){
+          Get.to(const AccountView());
+        }
+        else if(value==4){
+          Get.to(const CartView());
+        }
+        
       },
       currentIndex: selectedIndex,
       iconSize: 18,
-      selectedLabelStyle: TextStyle(fontSize: 10),
+      selectedLabelStyle: const TextStyle(fontSize: 10),
       unselectedFontSize: 10,
       selectedItemColor: Theme.of(context).primaryColor,
       unselectedItemColor: Colors.grey,

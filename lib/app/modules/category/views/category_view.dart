@@ -15,7 +15,7 @@ class CategoryView extends GetView<CategoryController> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ListTile(
+            const ListTile(
               title: Text(
                 "All Categories",
                 style: TextStyle(fontWeight: FontWeight.bold),
@@ -38,7 +38,7 @@ class CategoryView extends GetView<CategoryController> {
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(0),
-                            child: Image(image: NetworkImage('https://rukminim2.flixcart.com/flap/490/460/image/0f3d008be60995d4.jpg?q=20')),
+                            child: const Image(image: NetworkImage('https://rukminim2.flixcart.com/flap/490/460/image/0f3d008be60995d4.jpg?q=20')),
                           ),
                         ],
                       ),
@@ -76,11 +76,11 @@ class CategoryView extends GetView<CategoryController> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Popular Store",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -94,7 +94,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -108,7 +108,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -122,12 +122,12 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 30,),
-                    Text(
+                    const SizedBox(height: 30,),
+                    const Text(
                       "More on flipkart",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -141,7 +141,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -155,7 +155,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -169,12 +169,12 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 30,),
-                    Text(
+                    const SizedBox(height: 30,),
+                    const Text(
                       "Have you tried",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -188,7 +188,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(
@@ -202,7 +202,7 @@ class CategoryView extends GetView<CategoryController> {
                                 'https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20'),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Row(
                       children: [
                         PopularStore(

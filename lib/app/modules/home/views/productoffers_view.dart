@@ -28,7 +28,7 @@ class ProductoffersView extends GetView {
               ),
             ),
             Text(title),
-            Text("Min. $off Off",style: TextStyle(color: Colors.green),)
+            Text("Min. $off Off",style: const TextStyle(color: Colors.green),)
           ],
         ),
       ),

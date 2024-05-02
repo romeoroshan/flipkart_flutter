@@ -32,7 +32,7 @@ class ProductcontainerView extends GetView {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title,style: TextStyle(fontSize: 20),),
+              Text(title,style: const TextStyle(fontSize: 20),),
               const Row(
                 children: [
                   Icon(
@@ -59,9 +59,9 @@ class ProductcontainerView extends GetView {
               ),
               Row(
                 children: [
-                  Text(oldPrice,style: TextStyle(color: Colors.grey,decoration: TextDecoration.lineThrough),),
+                  Text(oldPrice,style: const TextStyle(color: Colors.grey,decoration: TextDecoration.lineThrough),),
                   Text(" Rs. $newPrice "),
-                  Text("$off off",style: TextStyle(color: Colors.green),)
+                  Text("$off off",style: const TextStyle(color: Colors.green),)
                 ],
               ),
             ],

@@ -11,7 +11,7 @@ class OffersCategoryView extends GetView {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(border: Border.all(width: 1,color: Color.fromARGB(255, 191, 189, 189))),
+      decoration: BoxDecoration(border: Border.all(width: 1,color: const Color.fromARGB(255, 191, 189, 189))),
       width: MediaQuery.of(context).size.width * .2,
       child: Column(
         children: [

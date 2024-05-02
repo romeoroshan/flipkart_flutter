@@ -195,10 +195,10 @@ class HomeView extends GetView<HomeController> {
                 "1 item in your cart",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              trailing: OutlinedButton(onPressed: (){}, child: const Text("Buy Now"),style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder())),)
+              trailing: OutlinedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(const RoundedRectangleBorder()),),child: const Text("Buy Now"),)
             ),
             ProductcontainerView(imgUrl: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRFwI5njmtkcSU2_XhhP196bIp-JeksLaeXcJU6xBiv8J8HgQTtwHvkBSwmdkKmw0yQx0LiRVHMtNYyphDtyXBa87NBXP_ZxTOzZKNU2TNvIRdAvMMAS4Ra5g&usqp=CAE', title: 'iPhone 15', oldPrice: '100000', newPrice: '25000', off: '75'),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Container(
               width: sWidth,
               height: 520,

@@ -32,7 +32,7 @@ class CarousalView extends GetView {
       options: CarouselOptions(
           scrollDirection: Axis.horizontal,
           autoPlay: true,
-          autoPlayInterval: Duration(seconds: 3),
+          autoPlayInterval: const Duration(seconds: 3),
           enlargeCenterPage: true),
     );
   }

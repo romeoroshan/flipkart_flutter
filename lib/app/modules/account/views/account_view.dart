@@ -19,16 +19,16 @@ class AccountView extends GetView<AccountController> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "91+ 7012------74",
               style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.outbox,
                   color: Color.fromARGB(255, 246, 223, 23),
                   size: 16,
@@ -41,7 +41,7 @@ class AccountView extends GetView<AccountController> {
                       fontSize: 16,
                       color: Theme.of(context).primaryColor),
                 ),
-                Text(
+                const Text(
                   " member >",
                   style: TextStyle(fontSize: 15, color: Colors.grey),
                 ),
@@ -160,12 +160,12 @@ class AccountView extends GetView<AccountController> {
                 color: Theme.of(context).primaryColor,
                 size: 28,
               ),
-              title: Text("Personal Loan"),
-              subtitle: Text(
+              title: const Text("Personal Loan"),
+              subtitle: const Text(
                 "Instant loan upto 5 lakh",
                 style: TextStyle(color: Colors.grey),
               ),
-              trailing: Text(
+              trailing: const Text(
                 ">",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
               ),
@@ -176,12 +176,12 @@ class AccountView extends GetView<AccountController> {
                 color: Theme.of(context).primaryColor,
                 size: 28,
               ),
-              title: Text("Flipkart Axis Bank Credit Card"),
-              subtitle: Text(
+              title: const Text("Flipkart Axis Bank Credit Card"),
+              subtitle: const Text(
                 "Apply & enter the world of unlimited benefits!",
                 style: TextStyle(color: Colors.grey),
               ),
-              trailing: Text(
+              trailing: const Text(
                 ">",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
               ),
@@ -192,12 +192,12 @@ class AccountView extends GetView<AccountController> {
                 color: Theme.of(context).primaryColor,
                 size: 28,
               ),
-              title: Text("Flipkart Pay Later"),
-              subtitle: Text(
+              title: const Text("Flipkart Pay Later"),
+              subtitle: const Text(
                 "Get 20000 worth Times Prime benefits!",
                 style: TextStyle(color: Colors.grey),
               ),
-              trailing: Text(
+              trailing: const Text(
                 ">",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
               ),
@@ -223,12 +223,12 @@ class AccountView extends GetView<AccountController> {
                 color: Theme.of(context).primaryColor,
                 size: 28,
               ),
-              title: Text("Check my credit score"),
-              subtitle: Text(
+              title: const Text("Check my credit score"),
+              subtitle: const Text(
                 "Free score check. Personalized loan offers",
                 style: TextStyle(color: Colors.grey),
               ),
-              trailing: Text(
+              trailing: const Text(
                 ">",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
               ),
@@ -248,9 +248,9 @@ class AccountView extends GetView<AccountController> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: const Row(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   CashbackView(
@@ -278,8 +278,8 @@ class AccountView extends GetView<AccountController> {
               height: 5,
               color: const Color.fromARGB(255, 228, 228, 228),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
               child: Row(
                 children: [
                   Text(
@@ -294,55 +294,55 @@ class AccountView extends GetView<AccountController> {
                 Icons.hdr_plus,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Flipkart Plus"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Flipkart Plus"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.person_outline,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Edit Profile"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Edit Profile"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.credit_card,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Saved Credit Card"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Saved Credit Card"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.location_city,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Saved Addresses"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Saved Addresses"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.language,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Select Language"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Select Language"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.notifications,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Notification Settings"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Notification Settings"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             Container(
               height: 5,
               color: const Color.fromARGB(255, 228, 228, 228),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
               child: Row(
                 children: [
                   Text(
@@ -357,23 +357,23 @@ class AccountView extends GetView<AccountController> {
                 Icons.reviews,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Reviews"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Reviews"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.question_answer,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Questions & Answers"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Questions & Answers"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             Container(
               height: 5,
               color: const Color.fromARGB(255, 228, 228, 228),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
               child: Row(
                 children: [
                   Text(
@@ -388,23 +388,23 @@ class AccountView extends GetView<AccountController> {
                 Icons.star_outline,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Flipkart Creator Studio"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Flipkart Creator Studio"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.person_outline,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Sell on Flipkart"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Sell on Flipkart"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             Container(
               height: 5,
               color: const Color.fromARGB(255, 228, 228, 228),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 15, bottom: 15),
               child: Row(
                 children: [
                   Text(
@@ -419,16 +419,16 @@ class AccountView extends GetView<AccountController> {
                 Icons.edit_document,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Terms, Policies and Licenses"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Terms, Policies and Licenses"),
+              trailing: const Icon(Icons.arrow_right),
             ),
             ListTile(
               leading: Icon(
                 Icons.question_mark,
                 color: Theme.of(context).primaryColor,
               ),
-              title: Text("Questions & Answers"),
-              trailing: Icon(Icons.arrow_right),
+              title: const Text("Questions & Answers"),
+              trailing: const Icon(Icons.arrow_right),
             ),
           ],
         ),

@@ -22,7 +22,7 @@ class ProductView extends GetView {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top:12.0),
-      child: Container(
+      child: SizedBox(
         width: MediaQuery.of(context).size.width * .9,
         height: 150,
         child: Column(
@@ -33,14 +33,14 @@ class ProductView extends GetView {
                 Column(
                   children: [
                     SizedBox(width: MediaQuery.of(context).size.width*.2,child: Image(image: NetworkImage(imgUrl))),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Container(
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(1)
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical:1.0,horizontal: 10),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(vertical:1.0,horizontal: 10),
                         child: Text("Qty: 1"),
                       ),
                     )
@@ -50,8 +50,8 @@ class ProductView extends GetView {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(title,style: TextStyle(fontSize: 18),),
-                    Text("Carbon Blue",style: TextStyle(color: Colors.grey,fontSize: 10),),
+                    Text(title,style: const TextStyle(fontSize: 18),),
+                    const Text("Carbon Blue",style: TextStyle(color: Colors.grey,fontSize: 10),),
                     const Row(
                       children: [
                         Icon(
@@ -83,19 +83,19 @@ class ProductView extends GetView {
                     ),
                     Row(
                       children: [
-                        Text(oldPrice,style: TextStyle(color: Colors.grey,decoration: TextDecoration.lineThrough),),
+                        Text(oldPrice,style: const TextStyle(color: Colors.grey,decoration: TextDecoration.lineThrough),),
                         Text(" Rs. $newPrice "),
-                        Text("$off% off",style: TextStyle(color: Colors.green),),
+                        Text("$off% off",style: const TextStyle(color: Colors.green),),
                         
                       ],
                     ),
-                    Text("4 Offers applied",style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 12),),
+                    const Text("4 Offers applied",style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 12),),
                   ],
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal:15.0,vertical: 8),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal:15.0,vertical: 8),
               child: Row(
                 children: [
                   Text("Delivery by May 5, Sun, ",style: TextStyle(fontSize: 10),),

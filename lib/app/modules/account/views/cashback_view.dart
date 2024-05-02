@@ -15,7 +15,7 @@ class CashbackView extends GetView {
     double sWidth = screenSize.width;
     return Column(
       children: [
-        Container(
+        SizedBox(
           width: sWidth * 0.3,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(8),
@@ -25,7 +25,7 @@ class CashbackView extends GetView {
         Text(title),
         Text(
           desc,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         )
       ],
     );
